@@ -1,0 +1,55 @@
+//if, else if, else	================================================
+
+if(a){
+b
+}
+else if(c){
+d
+}
+else{
+e
+}
+
+//bytecode
+1: if !a goto 4
+2: b
+3: goto 8
+4: if !c goto 7
+5: d
+6: goto 8
+7: e
+8: 
+
+//while loops		================================================
+
+while(a){
+b
+}
+
+//bytecode		================================================
+1: goto 3
+2: b
+3: if a goto 2
+
+//do while loops	================================================
+
+do{
+b
+} while(a);
+
+//bytecode
+1: b
+2: if a goto 1
+
+//for loops		================================================\
+
+for(a;b;c){
+d
+}
+
+//bytecode
+1: a
+2: goto 5
+3: d
+4: c
+5: if b goto 3
